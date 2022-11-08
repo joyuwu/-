@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PlayerControl : MonoBehaviour
     private GameObject focusEnemy;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,11 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
+
+
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
 
         float miniDist = 9999;

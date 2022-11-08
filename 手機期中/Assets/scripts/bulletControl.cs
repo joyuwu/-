@@ -27,14 +27,12 @@ public class bulletControl : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            // 刪除自己
             gameObject.SetActive(false);
-            Destroy(gameObject);
+            Destroy(gameObject, 1);
         }
 
         if (other.tag == "Wall")
         {
-            // 刪除自己
             gameObject.SetActive(false);
             Destroy(gameObject);
         }
